@@ -1,4 +1,69 @@
-mat-form-field {
+/* Conteneur du formulaire */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(239, 241, 242);
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Champs du formulaire */
+.form-field {
   width: 100%;
-  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* Contenu du dialogue */
+.dialog-content {
+  padding: 20px;
+  background-color: rgb(239, 241, 242);
+
+
+}
+
+/* Actions du dialogue */
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: rgb(239, 241, 242);
+
+}
+
+/* Bouton Cancel */
+.cancel-button {
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Bouton Submit */
+.submit-button {
+  background-color: #38b158;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 8px 16px;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.submit-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+
+}
+
+/* Style des erreurs */
+mat-error {
+  font-size: 12px;
+  color: #e74c3c;
+}
+h2{
+  background-color: rgb(239, 241, 242);
+
 }

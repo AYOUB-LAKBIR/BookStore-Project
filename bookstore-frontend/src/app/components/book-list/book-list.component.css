@@ -1,10 +1,63 @@
-table {
-  width: 100%;
-  margin-top: 20px;
-}
-
-button {
+/* Conteneur des actions (bouton "Add New Book") */
+.actions {
+  text-align: right;
   margin-bottom: 20px;
 }
 
+.add-button {
+  background-color: #3498db;
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+}
 
+.add-button:hover {
+  background-color: #afd2ea;
+}
+
+/* Style du tableau */
+table {
+  width: 100%;
+  border-collapse:collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #c7d5da;
+
+}
+
+th {
+  color: rgb(29, 4, 4);
+  font-size: large;
+  text-align: left;
+
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #0e0202;
+
+}
+
+
+/* Effet de survol sur les lignes du tableau */
+.table-row {
+  background-color: #f9f9f9;
+font-size: medium;
+
+}
+.table-row:hover{
+  background-color: bisque;
+}
+
+/* Boutons d'action */
+button[mat-icon-button] {
+  margin: 0 5px;
+}
+
+/* Style pour les icônes */
+mat-icon {
+  font-size: 20px;
+}

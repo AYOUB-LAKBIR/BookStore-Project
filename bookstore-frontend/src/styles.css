@@ -1,4 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Définir une police moderne et des styles de base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(239, 241, 242);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titres */
+h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Boutons (style général pour cohérence) */
+button {
+  transition: background-color 0.3s ease, transform 0.1s ease;
+
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: rgb(150, 143, 123);
+}
+
+/* Ombres pour les cartes et éléments interactifs */
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 10px 12px 24px rgba(0, 0, 0, 0.15);
+}
